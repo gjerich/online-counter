@@ -37,7 +37,7 @@ function inc_count($path,$file,$atime)
 	closedir($handle);
     }
 }
-
+//usage
 echo inc_count($path,$file,$atime);
 
 
