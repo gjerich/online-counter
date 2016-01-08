@@ -39,15 +39,3 @@ function inc_count($path,$file,$atime)
 }
 //usage
 echo inc_count($path,$file,$atime);
-
-
-
-
-
-
-
-
-
-
-
-
