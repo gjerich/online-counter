@@ -8,7 +8,7 @@ date_default_timezone_set("UTC");
 $path='../tmp/';//sesion files folder
 $file_name='sess_'.$_COOKIE['PHPSESSID'];
 $file=$path.$file_name;
-$atime=300;
+$atime=300;//5 min
 
 function inc_count($path,$file,$atime)
 {
