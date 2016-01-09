@@ -32,8 +32,8 @@ function inc_count($path,$file,$atime)
 		}
 	    }
 	}
-	return 'There is<b> '.(count(scandir($path))-2).' </b>online users. (based on users active over the past '.($atime / 60).' minutes)';
 	closedir($handle);
+	return 'There is<b> '.(count(scandir($path))-2).' </b>online users. (based on users active over the past '.($atime / 60).' minutes)';
     }
 }
 
