@@ -4,7 +4,6 @@ session_start();
 
 date_default_timezone_set("UTC"); 
 
-
 $path='../tmp/';//sesion files folder
 $file_name='sess_'.$_COOKIE['PHPSESSID'];
 $file=$path.$file_name;
