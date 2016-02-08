@@ -1,4 +1,4 @@
 # online-counter
-Simple online and registered users counter.
+Simple online users counter.
 
 Git testing
