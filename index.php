@@ -33,7 +33,8 @@ function inc_count($path,$file,$atime)
 	    }
 	}
 	closedir($handle);
-	return 'There is<b> '.(count(scandir($path))-2).' </b>online users. (based on users active over the past '.($atime / 60).' minutes)';
+	$prefix = ((count(scandir($path))-2) == 1) ? '' : '\'s';
+	return 'There is<b> '.(count(scandir($path))-2).' </b>online user' . $prefix . '. (based on users active over the past '.($atime / 60).' minutes)';
     }
 }
 
